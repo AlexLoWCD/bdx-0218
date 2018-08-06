@@ -1,0 +1,14 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AlexLoWCD",
+  "license": "ISC",
+  "devDependencies": {
+    "prompt-sync": "^4.1.6"
+  }
+}

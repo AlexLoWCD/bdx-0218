@@ -1,0 +1,52 @@
+$border: 2px solid black;
+$widthFlag: 150px;
+$heightFlag: 250px;
+
+.Flag {
+  position: relative;
+  width: $widthFlag;
+  height: $heightFlag;
+  background-color: white;
+  margin: 150px auto;
+  border-top: $border;
+  border-bottom: $border;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: $widthFlag;
+    height: $heightFlag;
+    border: $border;
+    transition: all ease 1s;
+  }
+
+  &::before {
+    left: -$widthFlag;
+    background-color: blue;
+    border-right: none;
+  }
+
+  &::after {
+    right: -$widthFlag;
+    background-color: red;
+    border-left: none;
+  }
+
+  &:hover {
+    &::before {
+      left: $widthFlag;
+      background-color: orange;
+      border-right: $border;
+      border-left: none;
+    }
+  
+    &::after {
+      right: $widthFlag;
+      background-color: green;
+      border-right: none;
+      border-left: $border;
+    }
+  }
+}

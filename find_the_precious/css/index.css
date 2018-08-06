@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "aniron";
+    src: url("../fonts/anirm___.ttf");
+}
+
+@font-face {
+    font-family: "anironbold";
+    src: url("../fonts/anirb___.ttf");
+}
+
+@font-face {
+    font-family: "partybusiness";
+    src: url("../fonts/partybusiness.ttf");
+}
+
+@font-face {
+    font-family: "tengwarc";
+    src: url("../fonts/tngani.ttf");
+}
+
+.container-fluid {
+    height: 3000px;
+    padding: 0;
+    background: url("../img/_bg_light.png") repeat;
+}
+
+.text-orange {
+    color: #e55a39;
+}
+
+.alternative {
+    font-family: "tengwarc";
+}
+
+.custom-title {
+  margin: 20px 0;
+  font-size: 2vw;
+}
+
+body {
+    font-family: "aniron";
+}
+
+
+/* NAVBAR STYLE */
+
+.navbar {
+    background-color: #e55a39;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-item:not(.active) .nav-link:focus, .navbar-light .navbar-nav .nav-item:not(.active) .nav-link:hover {
+    color: #c7b7b7;
+}
+
+
+/* CAROUSEL STYLE */
+
+.carousel {
+    font-family: "partybusiness";
+}
+
+.carousel .carousel-item img {
+    min-width: auto;
+    max-height: 600px;
+}
+
+.carousel .carousel-item .custom-image {
+    min-height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 80px;
+    line-height: 80px;
+    background-image: none;
+    font-size: 80px;
+}
+
+.carousel .carousel-caption {
+    text-align: left;
+    left: 18%;
+    bottom: 35%;
+}
+
+.carousel .carousel-caption h1 {
+    font-size: 6vw;
+}
+
+.carousel .carousel-caption h2 {
+    font-size: 4vw;
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .active>.nav-link {
+        border-bottom: 3px solid white;
+    }
+    .navbar-light .navbar-nav .nav-item {
+        position: relative;
+    }
+    .navbar-light .navbar-nav .nav-item:not(:last-child) {
+        padding: 0 5px;
+    }
+    .navbar-light .navbar-nav .nav-item:not(:last-child)::after {
+        position: absolute;
+        top: 20%;
+        right: 0;
+        content: "";
+        width: 1px;
+        height: 50%;
+        border-left: 1px solid white;
+    }
+}
